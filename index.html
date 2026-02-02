@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 200px;
+            padding: 16px;
+            border: 1px solid black;
+            border-radius: 10px;
+            & span { font-size: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="cep" placeholder="Digite seu CEP" onkeyup="buscarCEP()"/>
+    <input type="text" id="logradouro" placeholder="Digite seu endereço"/>
+    <input type="text" id="bairro" placeholder="Digite seu bairro"/>
+    <input type="text" id="localidade" placeholder="Digite sea cidade"/>
+    <input type="text" id="estado" placeholder="Digite seu estado"/>
+
+
+    <div id="resposta">
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>
