@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .card{
-            width: 200px;
-            padding: 16px;
-            border: 1px solid black;
-            border-radius: 10px;
-            & span { font-size: 10px; }
-        }
-    </style>
+    <title>API-CEP-TEST</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <input type="text" id="cep" placeholder="Digite seu CEP" onkeyup="buscarCEP()"/>
-    <input type="text" id="logradouro" placeholder="Digite seu endereço"/>
-    <input type="text" id="bairro" placeholder="Digite seu bairro"/>
-    <input type="text" id="localidade" placeholder="Digite sea cidade"/>
-    <input type="text" id="estado" placeholder="Digite seu estado"/>
 
-
-    <div id="resposta">
+<body class="bg-black/30 ">
+    <div>
+        <h1>Digite seu cep e confira os detalhes do seu lar </h1>
     </div>
-    <script src="index.js"></script>
+    <div class=" mt-10 p-10 flex flex-col gap-4 max-w-lg mx-auto">
+        <input class="border border-gray-400 p-2 rounded bg-gray-100 mb-[80px]" type="text" id="cep"
+            placeholder="Digite seu CEP" onkeyup="buscarCEP()" />
+        <input class="border border-gray-400 p-2 rounded bg-gray-100 " type="text" id="logradouro"
+            placeholder="Digite seu endereço" />
+        <input class="border border-gray-400 p-2 rounded bg-gray-100 " type="text" id="bairro"
+            placeholder="Digite seu bairro" />
+        <input class="border border-gray-400 p-2 rounded bg-gray-100 " type="text" id="localidade"
+            placeholder="Digite sua cidade" />
+        <input class="border border-gray-400 p-2 rounded bg-gray-100 " type="text" id="estado"
+            placeholder="Digite seu estado" />
+        <input class="border border-gray-400 p-2 rounded bg-gray-100 " type="text" id="estado"
+            placeholder="Digite seu estado" />
+    </div>
 
-    
+    <div id="resposta"></div>
+    <script src="index.js"></script>
 </body>
+
 </html>
